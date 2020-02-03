@@ -15,3 +15,13 @@ $text = "Labai. grazus. sakinys. bus. kitame. darbe. ";
 $text2 = str_ireplace("." , " " , $text );
 
 print $text2 . "<br><br>";
+
+// "3. sukurti stringa kuris susidarytu is sakynio. Turi jame egzistuoti didzioios ir mazosios raides. Panaudoti php default'ine funkcija, kuri visas stringo raides paverstu didziosiomis arba mazosiosmis"
+
+$sentence = "Mano vardas yra Brigita";
+
+$sentence_upper = strtoupper($sentence);
+$sentence_lower = strtolower($sentence);
+
+print $sentence_upper . "<br>";
+print $sentence_lower . "<br><br>";
