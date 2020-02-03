@@ -25,3 +25,48 @@ $sentence_lower = strtolower($sentence);
 
 print $sentence_upper . "<br>";
 print $sentence_lower . "<br><br>";
+
+// "4. uzduotis switch"
+
+$target = 'Treciadienis';
+
+
+switch (strtoupper($target)) {
+	case 'PIRMADIENIS':
+		print 'Pirmadienis';
+		break;
+	case 'ANTRADIENIS':
+		print 'Antradienis';
+		break;
+	case 'TRECIADIENIS':
+		print 'Treciadienis';
+		break;
+	case 'KETVIRTADIENIS':
+		print 'Ketvirtadienis';
+		break;
+	case 'PENKTADIENIS':
+		print 'Penktadienis';
+		break;
+	case 'SESTADIENIS':
+		print 'Sestadienis';
+		break;
+	case 'SEKMADIENIS':
+		print 'Sekmadienis';
+		break;
+	default:
+		print 'Nera tokios savaites dienos';
+		break;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
