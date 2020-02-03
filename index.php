@@ -70,9 +70,147 @@ for ($x = 0; $x <=10; $x+=2){
 }
 
 
+// "6. for foreach"
+
+
+$text3 = 'Tekstas';
+
+$names = array('8', 'Jonas', 'Marius');
+$names2 = [8, 'Jonas', 'Marius'];
+
+print_r($names);
+var_dump($names2);
+
+
+$people = ['vardas' => 'Jonas', 'pavarde' => 'Jonaitis', 'amzius' => 24, 'miestas' => 'Vilnius'];
+
+var_dump($people);
+
+
+$people2 = 
+[
+['vardas' => 'Jonas', 'pavarde' => 'Jonaitis', 'amzius' => 24, 'miestas' => 'Vilnius'],
+['vardas' => 'Jonas', 'pavarde' => 'Jonaitis', 'amzius' => 24, 'miestas' => 'Vilnius'],
+['vardas' => 'Jonas', 'pavarde' => 'Jonaitis', 'amzius' => 24, 'miestas' => 'Vilnius'],
+];
+var_dump($people2);
+
+foreach ($names2 as $key => $value) {
+	print $key . ' ' . $value;
+}
+
+
+// "6. uzduotis "
+
+
+$cars = 
+[
+	[
+		'brand' => 'audi',
+		'model' => 'a4',
+		'year' => 2002,
+		'cost' => 22000,
+		'country' => 
+		[
+			'Lithuania' => 
+			[
+				2011,
+				2013,
+				2015,
+			],
+			'Belgium',
+			'Germany',
+		],
+	],
+	[
+		'brand' => 'bmw',
+		'model' => 'e35',
+		'year' => 2005,
+		'cost' => 27000,
+		'country' => 
+		[
+			'Lithuania' => 
+			[
+				2011,
+				2013,
+				2015,
+			],
+			'Belgium',
+			'Germany',
+		],
+	],
+	[
+		'brand' => 'mb',
+		'model' => 's500',
+		'year' => 2009,
+		'cost' => 22000,
+		'country' => 
+		[
+			'Lithuania' => 
+			[
+				2011,
+				2013,
+				2015,
+			],
+			'Belgium',
+			'Germany',
+		],
+	],
+];
+
+foreach ($cars as $value) {
+	var_dump($value['country']['Lithuania']);
+}
+
+print "<br><br>";
+
+
+// "7. uzduotis"
+
+$cards = 
+[
+	[
+		'url' => "https://s3.ap-south-1.amazonaws.com/isupportcause/uploads/overlay/isupportimg_1505799722113.png",
+		'alt' => 'forest',
+		'text' => 'A forest is a large area dominated by trees. Hundreds of more precise definitions of forest are used throughout the world, incorporating factors such as tree density, tree height, land use, legal standing and ecological function.'
+	],
+	[
+		'url' => "https://www.dendropark.lt/images/uploader/tu/400x400.g/tujenis-kapoklinis-variegata-p9-1.jpg?t=566045",
+		'alt' => 'forest',
+		'text' => 'A forest is a large area dominated by trees. Hundreds of more precise definitions of forest are used throughout the world, incorporating factors such as tree density, tree height, land use, legal standing and ecological function.'
+	],
+	[
+		'url' => "https://www.lrt.lt/img/2019/07/23/477875-341526-393x221.jpg",
+		'alt' => 'forest',
+		'text' => 'A forest is a large area dominated by trees. Hundreds of more precise definitions of forest are used throughout the world, incorporating factors such as tree density, tree height, land use, legal standing and ecological function.'
+	],
+];
 
 
 
+?>
 
-
-
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		.cards {
+			width: 30px;
+			display: flex;
+			align-items: center;
+		}
+	</style>
+</head>
+<body>
+	<section class="cards">
+		<?php foreach ($cards as $value):?>
+		<div class="card">
+			<img src="<?php print $value['url']; ?>" alt="<?php print $value['alt']; ?>">
+			<p><?php print $value['text']; ?></p>
+		</div>
+	<?php endforeach; ?>
+		
+	</section>
+</body>
+</html>
