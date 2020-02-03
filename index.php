@@ -7,4 +7,11 @@ $date = date('Y.m.d');
 
 $result = $string . $date;
 
-print $result;
+print $result . "<br><br>";
+
+// "2. sukurti sakini is 5< zodziu. po kiekvieno zodzio yra padetas taskas. jums reikia naudojant bazines php funkcijas tuos taskus pakeistu i tarpus"
+
+$text = "Labai. grazus. sakinys. bus. kitame. darbe. ";
+$text2 = str_ireplace("." , " " , $text );
+
+print $text2 . "<br><br>";
