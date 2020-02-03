@@ -1,5 +1,9 @@
 <?php
 
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
+
 // "1. ekrane atvaizduokite teksta 'Sios dienos data - ' ir su php atvaizduokite sios dienos data"
 
 $string = "Sios dienos data - ";
@@ -30,38 +34,40 @@ print $sentence_lower . "<br><br>";
 
 $target = 'Treciadienis';
 
-
 switch (strtoupper($target)) {
 	case 'PIRMADIENIS':
-		print 'Pirmadienis';
+		print 'Pirmadienis <br>';
 		break;
 	case 'ANTRADIENIS':
-		print 'Antradienis';
+		print 'Antradienis <br>';
 		break;
 	case 'TRECIADIENIS':
-		print 'Treciadienis';
+		print 'Treciadienis <br><br>';
 		break;
 	case 'KETVIRTADIENIS':
-		print 'Ketvirtadienis';
+		print 'Ketvirtadienis <br>';
 		break;
 	case 'PENKTADIENIS':
-		print 'Penktadienis';
+		print 'Penktadienis <br>';
 		break;
 	case 'SESTADIENIS':
-		print 'Sestadienis';
+		print 'Sestadienis <br>';
 		break;
 	case 'SEKMADIENIS':
-		print 'Sekmadienis';
+		print 'Sekmadienis <br>';
 		break;
 	default:
-		print 'Nera tokios savaites dienos';
+		print 'Nera tokios savaites dienos <br>';
 		break;
 }
 
 
 
+// "5. Sukurkite FOR cikla kuris prasidetu nuo 0, veiktu iki kol kintamasis pataps 10, ir atspausdins savo ciklo reiksme kas antra"
 
-
+for ($x = 0; $x <=10; $x+=2){
+	print "The number is : $x <br>";
+}
 
 
 
