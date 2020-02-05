@@ -170,19 +170,19 @@ print "<br><br>";
 $cards = 
 [
 	[
-		'url' => "https://s3.ap-south-1.amazonaws.com/isupportcause/uploads/overlay/isupportimg_1505799722113.png",
+		'url' => "https://www.dendropark.lt/images/uploader/tu/400x400.g/tujenis-kapoklinis-variegata-p9-1.jpg?t=566045",
 		'alt' => 'forest',
-		'text' => 'A forest is a large area dominated by trees. Hundreds of more precise definitions of forest are used throughout the world, incorporating factors such as tree density, tree height, land use, legal standing and ecological function.'
+		'text' => 'A forest is a large area dominated by trees.'
 	],
 	[
 		'url' => "https://www.dendropark.lt/images/uploader/tu/400x400.g/tujenis-kapoklinis-variegata-p9-1.jpg?t=566045",
 		'alt' => 'forest',
-		'text' => 'A forest is a large area dominated by trees. Hundreds of more precise definitions of forest are used throughout the world, incorporating factors such as tree density, tree height, land use, legal standing and ecological function.'
+		'text' => 'A forest is a large area dominated by trees.'
 	],
 	[
-		'url' => "https://www.lrt.lt/img/2019/07/23/477875-341526-393x221.jpg",
+		'url' => "https://www.dendropark.lt/images/uploader/tu/400x400.g/tujenis-kapoklinis-variegata-p9-1.jpg?t=566045",
 		'alt' => 'forest',
-		'text' => 'A forest is a large area dominated by trees. Hundreds of more precise definitions of forest are used throughout the world, incorporating factors such as tree density, tree height, land use, legal standing and ecological function.'
+		'text' => 'A forest is a large area dominated by trees. '
 	],
 ];
 
@@ -198,7 +198,6 @@ $cards =
 		.cards {
 			width: 30px;
 			display: flex;
-			align-items: center;
 		}
 	</style>
 </head>
