@@ -37,3 +37,14 @@ $b = "1 maisas";
 
 $result = ($a + $b);
 print "$result <br><br>";
+
+
+// 5. Koki kintamaji (kintamuosius) reikia istrinti ar uzkomentuoti, kad $e igytu reiksme 10:
+
+// $a = "11";
+// $b = "5";
+$c = "6";
+$d = 4;
+
+$e = $d + $c;
+print $e;
