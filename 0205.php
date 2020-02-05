@@ -48,3 +48,24 @@ $d = 4;
 
 $e = $d + $c;
 print $e;
+
+print ("<br><br>");
+
+
+
+// 8. Turime kintamuosius ir reiksmes $vardas, $pavarde ir $atliginimas. parasykite salyga, jeigu egzistuoja kintamieji $vardas ir $pavarde, o $atlyginimas > 5000, spausdinti - visi duomenys yra; kitu atveju spausdinti: 
+
+
+$vardas = 'Jonas';
+$pavarde = 'Jonaitis';
+$atlyginimas = 5000;
+
+if (isset($vardas)&& 
+isset($pavarde) && $atlyginimas>=5000) {
+	print 'visi duomenys yra <br><br>';
+}else{
+	print $vardas . ' ' ;
+	print $pavarde . ' ';
+	print $atlyginimas;
+}
+
