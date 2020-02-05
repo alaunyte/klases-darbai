@@ -69,3 +69,20 @@ isset($pavarde) && $atlyginimas>=5000) {
 	print $atlyginimas;
 }
 
+
+// 10. Padidinkite masyvo elementu reiksmes 10 kartu ir atspausdinkite foreach pagalba. Tekstines lieka nepakeistos.
+
+
+$a = array(10, 20, 30, 1, 1, 50, 0, 0, "jonas", "petras");
+
+foreach ($a as $value) {
+	if (is_integer($value)) {
+		print $value * 10 . '<br>';
+	}
+}
+
+print ("<br><br>");
+
+
+
+
