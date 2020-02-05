@@ -84,5 +84,16 @@ foreach ($a as $value) {
 print ("<br><br>");
 
 
+// 11. Sukurtkite seno masyvo pagrindu naja masyva. Sumazinkite jo elementu kieki 2 kartus, t.y. palikite kas antra elementa ir atspausdinkite.
 
 
+$a  = array(10, 20, 30, 50, 60, 70, 80);
+$array = [];
+
+$count = count($a);
+for($x=0; $x<=$count; $x+=2){
+	$array[] = $a[$x];
+}
+var_dump($array);
+
+print "<br><br>";
