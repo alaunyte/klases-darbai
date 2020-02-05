@@ -28,3 +28,12 @@ switch ($salis) {
 		break;
 	default;
 }
+
+
+// 4. Kokias operacijas atlikti su $a ir $b, kad atsispausdintu 11:
+
+$a = "10 maisu";
+$b = "1 maisas";
+
+$result = ($a + $b);
+print "$result <br><br>";
