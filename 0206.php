@@ -59,3 +59,55 @@
 	</table>
 </body>
 </html>
+
+
+
+<?php
+
+
+
+
+// 2. Is masyvo sugeneruokite lentele, lenteles eilutes turi buti spalvinamos, priklausomai nuo elemento reiksmes trijomis spalvomis : =10, <10 ir >10 variantams
+
+
+$name = 
+[
+	'jonas' => 0,
+	'petras' => 20,
+	'simas' => 10,
+];
+ var_dump($name);
+
+?>
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title> </title>
+</head>
+<body>
+	<table>
+		<tr>
+			<?php 
+				foreach ($name as $key => $value) {
+					print '<th>' . $key . '</th>';
+				}
+					print '<tr>';
+
+				foreach ($name as $value) {
+					if ($value < 10) {
+						print '<td style="background-color:linen;">' . $value . '</td>';
+					} elseif ($value == 10) {
+						print '<td style="background-color:purple;">' . $value . '</td>';
+					} elseif ($value > 10) {
+						print '<td style="background-color:powderblue;">' . $value . '</td>';
+					}
+				}
+
+				print '</tr>';
+
+			?>
+		</tr>
+	</table>
+</body>
+</html>
