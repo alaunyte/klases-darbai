@@ -165,4 +165,25 @@ print $result;
 print "<br><br>";
 
 
+
+// 6.Sukurkite registracijos forma. Metodas POST . input laukeliai: Vardas, Hobis, Augintinis, paspaudus mygtuka 'siusti' atvaizduokite juos ekrane, zemiau formos.
+
 ?>
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<form method="POST">
+		<input type="text" name="vardas" placeholder="Vardas">
+		<input type="text" name="hobis" placeholder="Hobis">
+		<input type="text" name="augintinis" placeholder="Augintinis">
+		<button type="submit">Siusti</button>
+	</form>
+	<p><?php print $_POST['vardas']; ?></p>
+	<p><?php print $_POST['hobis']; ?></p>
+	<p><?php print $_POST['augintinis']; ?></p>
+</body>
+</html>
