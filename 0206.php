@@ -143,5 +143,26 @@ print "<br><br>";
 
 
 
+// 5. Turime masyva $numbers = [0.5, 3, 7.3, 2, 7, 7.1, 9, 5.4]; Naujame masyve atrinkite naudodami atitinkamas funkcijas tik skaicius kurie turi reiksme po kablelio ne 0. Juos visus sudekite ir rezultata atvaizduokite ekrane.
 
 
+$numbers = [0.5, 3, 7.3, 2, 7, 7.1, 9, 5.4];
+$newNumbers = [];
+$result = 0;
+
+foreach ($numbers as $value) {
+	if (is_float($value) && $value != round($value)){
+		array_push($newNumbers, $value);
+	}
+}
+
+foreach ($newNumbers as $value) {
+	$result = $result + $value;
+}
+
+print $result;
+
+print "<br><br>";
+
+
+?>
