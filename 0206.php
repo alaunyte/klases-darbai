@@ -111,3 +111,19 @@ $name =
 	</table>
 </body>
 </html>
+
+
+<?php
+
+// 3.Masyvas sudarytas is elementu, kurie eiles  numeri arba identifikatoriu (rakta) ir reiksme.
+//   $array = ['siandiena', 'rasiu', 'tave', 'batai', 'mano', 'busi',];
+//   Atvaizduokite ekrane: siandiena busi.
+
+
+$array = ['siandiena', 'rasiu', 'tave', 'batai', 'mano', 'busi',];
+
+var_dump($array);
+
+print $array[0] . " " . $array[5];
+
+?>
