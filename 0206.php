@@ -122,8 +122,26 @@ $name =
 
 $array = ['siandiena', 'rasiu', 'tave', 'batai', 'mano', 'busi',];
 
-var_dump($array);
 
 print $array[0] . " " . $array[5];
 
-?>
+
+print "<br><br>";
+
+// 4. $array1 = ['Man atrodo tu esi geras zmogus', 'Ir mielas.',];
+//    $array2 = ['Tomai', 'Giedriau',];
+//    atvaizduokite ekrane nenaudojant ciklo, pazymint tiesiogiai, "Giedriau. Man atrodo tu esi geras zmogus."
+
+
+$array1 = ['Man atrodo tu esi geras zmogus', 'Ir mielas.',];
+$array2 = ['Tomai', 'Giedriau',];
+
+print $array2[1] . " " . $array1[0];
+
+
+print "<br><br>";
+
+
+
+
+
