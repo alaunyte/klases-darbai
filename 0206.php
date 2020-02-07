@@ -187,3 +187,39 @@ print "<br><br>";
 	<p><?php print $_POST['augintinis']; ?></p>
 </body>
 </html>
+
+
+<?php
+
+
+// 7.uzduotis
+
+
+
+// failo prijungimas
+$file = 'text.txt';
+$fo = fopen($file, 'a') or die("can't open file");
+fwrite($fo, implode(", ", $_POST) . "\n");
+fclose($fo);
+
+
+
+?>
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<form method="POST">
+		<input type="text" name="vardas" placeholder="Vardas">
+		<input type="text" name="hobis" placeholder="Hobis">
+		<input type="text" name="augintinis" placeholder="Augintinis">
+		<button type="submit" name="siusti">Siusti</button>
+	</form>
+</body>
+</html>
+
+
+
