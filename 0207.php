@@ -117,10 +117,10 @@ print "<br><br>";
 			flex-wrap: wrap;
 		}
 		.bottleBox{
-			background-image: url("https://lh3.googleusercontent.com/proxy/I8gewkoQeQZ3QDvYx02sbTjvIeq-uMD4kB3P8fdk5iXp-OBPtD0-t-Ajx4PgZAGOxHjdYIeh8pqBf0413symp5gSC4HNmljELiWBdXY4AP5nziTdviExBgh7HXKNSvM");
+			background-image: url("https://www.amara.com/static/uploads/images-2/products/x/huge/1166502/beer-box-fire-basket-307083.jpg");
 			background-size: cover;
 			width: 150px;
-			height: 100px;
+			height: 140px;
 			margin: 5px;
 		}
 		.bottle{
